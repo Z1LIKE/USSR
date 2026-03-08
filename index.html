@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Всесоюзный коммунистический плеер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    Всесоюзный коммунистический плеер
+  </div>
+
+  <div class="track-list" id="trackList">
+    <!-- Сюда будут добавляться треки через JavaScript -->
+  </div>
+  <div class="track-list-empty" id="trackListEmpty">
+    Треки не найдены
+  </div>
+
+  <div class="player" id="player">
+    <div class="controls">
+      <button onclick="prevTrack()">⏮️</button>
+      <button onclick="playPause()">🎶</button>
+      <button onclick="nextTrack()">⏭️</button>
+    </div>
+    <img class="album-art" src="https://via.placeholder.com/60" alt="Album Art">
+    <div class="info">
+      <h3 id="trackTitle">Название Песни</h3>
+      <p id="trackArtist">Исполнитель</p>
+    </div>
+    <div class="actions">
+      <button onclick="addToPlaylist()">Добавить в плейлист</button>
+      <button onclick="addToFavorites()">Добавить в избранное</button>
+      <button onclick="removeFromFavorites()">Удалить из избранного</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
